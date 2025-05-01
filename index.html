@@ -8,57 +8,68 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #3AAFA9;
+      color: #17252A;
     }
     .section {
-      background: linear-gradient(135deg, #ffffff, #f0f4f8);
+      background-color: #DEF2F1;
       padding: 2rem;
       border-radius: 1rem;
-      border: 2px solid #3b82f6;
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+      border: 3px solid #17252A;
       margin-bottom: 2rem;
     }
     .project-card {
-      background-color: #fef9c3;
+      background-color: #FEFFFF;
       padding: 1rem;
       border-radius: 0.75rem;
-      border: 1px solid #facc15;
-      transition: transform 0.2s ease-in-out;
+      border: 2px solid #2B7A78;
+      transition: transform 0.2s ease-in-out, background-color 0.2s;
     }
     .project-card:hover {
       transform: scale(1.02);
-      background-color: #fef08a;
+      background-color: #DEF2F1;
     }
     .footer {
-      border-top: 1px solid #e5e7eb;
+      border-top: 2px solid #17252A;
+    }
+    a {
+      color: #2B7A78;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #2B7A78;
+      color: #FEFFFF;
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800">
-  <header class="bg-blue-600 shadow p-6 text-center text-white">
+<body>
+  <header class="shadow p-6 text-center">
     <h1 class="text-4xl font-bold">Shivam Agarwal</h1>
     <p class="text-lg mt-1">Computer Science & Engineering Student | Developer | ML Enthusiast</p>
     <p class="mt-2">22051107@kiit.ac.in | +91 8240342281 | Kolkata</p>
-    <a href="https://github.com/Kaljinx" class="text-yellow-300 hover:underline" target="_blank">GitHub Profile</a>
+    <a href="https://github.com/Kaljinx" class="hover:underline" target="_blank">GitHub Profile</a>
   </header>
 
   <main class="p-6 max-w-5xl mx-auto">
     <section class="section">
-      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Projects</h2>
+      <h2 class="text-2xl font-semibold border-b-2 border-black pb-2 mb-4">Projects</h2>
       <ul class="space-y-4">
         <li class="project-card">
-          <a href="https://github.com/Kaljinx/Calculator-HTTP-Microservice" class="text-blue-700 font-medium text-lg" target="_blank">Calculator-HTTP-Microservice</a>
+          <a href="https://github.com/Kaljinx/Calculator-HTTP-Microservice" class="font-medium text-lg" target="_blank">Calculator-HTTP-Microservice</a>
           <p class="text-sm">Node.js API that fetches and calculates Prime, Fibonacci, Even, and Random numbers. Includes token-based authentication and test scripts.</p>
         </li>
         <li class="project-card">
-          <a href="https://github.com/VisheshKumarBhagat/GenderRecognition" class="text-blue-700 font-medium text-lg" target="_blank">OpenCV Gender Classification</a>
+          <a href="https://github.com/VisheshKumarBhagat/GenderRecognition" class="font-medium text-lg" target="_blank">OpenCV Gender Classification</a>
           <p class="text-sm">Real-time face detection and gender classification using Haar Cascades and ML models in Python with OpenCV integration.</p>
         </li>
         <li class="project-card">
-          <a href="https://github.com/Kaljinx/bookstore-api" class="text-blue-700 font-medium text-lg" target="_blank">CRUD Bookstore API</a>
+          <a href="https://github.com/Kaljinx/bookstore-api" class="font-medium text-lg" target="_blank">CRUD Bookstore API</a>
           <p class="text-sm">Backend API for a bookstore with CRUD functionality, built using Node.js.</p>
         </li>
         <li class="project-card">
-          <a href="https://github.com/Kaljinx/Waller_FX" class="text-blue-700 font-medium text-lg" target="_blank">Desktop Background Alteration Via Native Access</a>
+          <a href="https://github.com/Kaljinx/Waller_FX" class="font-medium text-lg" target="_blank">Desktop Background Alteration Via Native Access</a>
           <p class="text-sm">Application using Java Native Access (JNA) for real-time OS-level background manipulation.</p>
         </li>
         <li class="project-card">
@@ -73,7 +84,7 @@
     </section>
 
     <section class="section">
-      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Certifications & Trainings</h2>
+      <h2 class="text-2xl font-semibold border-b-2 border-black pb-2 mb-4">Certifications & Trainings</h2>
       <ul class="list-disc pl-5 space-y-2 text-sm">
         <li>AWS Academy Cloud Architecting – Mar 2025</li>
         <li>Machine Learning Specialization – Stanford & DeepLearning.AI</li>
@@ -84,17 +95,17 @@
     </section>
 
     <section class="section">
-      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Skills</h2>
+      <h2 class="text-2xl font-semibold border-b-2 border-black pb-2 mb-4">Skills</h2>
       <p class="text-sm">HTML, CSS, JavaScript, React, Node.js, Java, C++, C, Kotlin</p>
     </section>
 
     <section class="section">
-      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Extra Curricular</h2>
+      <h2 class="text-2xl font-semibold border-b-2 border-black pb-2 mb-4">Extra Curricular</h2>
       <p class="text-sm">Student Mentor in IT Club – Guided junior students in coding and development.</p>
     </section>
   </main>
 
-  <footer class="footer text-center text-sm text-gray-600 py-4">
+  <footer class="footer text-center text-sm py-4">
     &copy; 2025 Shivam Agarwal
   </footer>
 </body>
