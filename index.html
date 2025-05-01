@@ -1,15 +1,98 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8";>
-  <title>SAMPPLE WEBPAGE YEEEEEEEE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivam Agarwal | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .section {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+    .project-card {
+      background-color: #f9fafb;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      transition: transform 0.2s ease-in-out;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    .footer {
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow p-6 text-center">
+    <h1 class="text-4xl font-bold">Shivam Agarwal</h1>
+    <p class="text-lg text-gray-600 mt-1">Computer Science & Engineering Student | Developer | ML Enthusiast</p>
+    <p class="mt-2 text-blue-500">22051107@kiit.ac.in | +91 8240342281 | Kolkata</p>
+    <a href="https://github.com/Kaljinx" class="text-blue-600 hover:underline" target="_blank">GitHub Profile</a>
+  </header>
 
-<h1>A Test Web Page, it does not have much.</h1>
-<h2>Look Into the Console here and check if [ oh ] is there or not</h2>
-<script src="index.js"></script>
-<p>CAN SOMEONE READ ME?</p>
+  <main class="p-6 max-w-5xl mx-auto">
+    <section class="section">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Projects</h2>
+      <ul class="space-y-4">
+        <li class="project-card">
+          <a href="https://github.com/Kaljinx/Calculator-HTTP-Microservice" class="text-blue-600 font-medium text-lg" target="_blank">Calculator-HTTP-Microservice</a>
+          <p class="text-sm">Node.js API that fetches and calculates Prime, Fibonacci, Even, and Random numbers. Includes token-based authentication and test scripts.</p>
+        </li>
+        <li class="project-card">
+          <a href="https://github.com/VisheshKumarBhagat/GenderRecognition" class="text-blue-600 font-medium text-lg" target="_blank">OpenCV Gender Classification</a>
+          <p class="text-sm">Real-time face detection and gender classification using Haar Cascades and ML models in Python with OpenCV integration.</p>
+        </li>
+        <li class="project-card">
+          <a href="https://github.com/Kaljinx/bookstore-api" class="text-blue-600 font-medium text-lg" target="_blank">CRUD Bookstore API</a>
+          <p class="text-sm">Backend API for a bookstore with CRUD functionality, built using Node.js.</p>
+        </li>
+        <li class="project-card">
+          <a href="https://github.com/Kaljinx/Waller_FX" class="text-blue-600 font-medium text-lg" target="_blank">Desktop Background Alteration Via Native Access</a>
+          <p class="text-sm">Application using Java Native Access (JNA) for real-time OS-level background manipulation.</p>
+        </li>
+        <li class="project-card">
+          <p class="text-lg font-medium">Cloud-Based Voting System</p>
+          <p class="text-sm">Secure cross-device voting platform developed for school elections with individual authentication.</p>
+        </li>
+        <li class="project-card">
+          <p class="text-lg font-medium">Laser Based Security System</p>
+          <p class="text-sm">Raspberry Pi project using lasers and photodiodes to detect breaches and trigger alarms.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Certifications & Trainings</h2>
+      <ul class="list-disc pl-5 space-y-2 text-sm">
+        <li>AWS Academy Cloud Architecting – Mar 2025</li>
+        <li>Machine Learning Specialization – Stanford & DeepLearning.AI</li>
+        <li>Android Developer Virtual Internship – Google for Developers</li>
+        <li>Strategy and Game Theory for Management – IIM Ahmedabad</li>
+        <li>Business Analytics for Decision Making – University of Colorado Boulder</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h2>
+      <p class="text-sm">HTML, CSS, JavaScript, React, Node.js, Java, C++, C, Kotlin</p>
+    </section>
+
+    <section class="section">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Extra Curricular</h2>
+      <p class="text-sm">Student Mentor in IT Club – Guided junior students in coding and development.</p>
+    </section>
+  </main>
+
+  <footer class="footer text-center text-sm text-gray-500 py-4">
+    &copy; 2025 Shivam Agarwal
+  </footer>
 </body>
 </html>
